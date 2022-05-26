@@ -12,7 +12,7 @@ export class GenieButtonComponent implements OnInit, OnDestroy {
   @HostListener('mouseenter')
   onMouseEnter() {
     if (!this.isAnimating) {
-      console.log("Entered area");
+      console.log('Entered area');
       this.toAnimate = true;
       this.testAnimation();
     }
@@ -24,7 +24,6 @@ export class GenieButtonComponent implements OnInit, OnDestroy {
   }
 
   // In px, sprite sheet is 3x4
-  private readonly spriteSheet = { width: 1080, height: 1268 };
   private readonly sprite = { width: 360, height: 317 };
   private readonly speed = 150;
   private readonly GENIE = [
@@ -92,7 +91,6 @@ export class GenieButtonComponent implements OnInit, OnDestroy {
     //   const y = this.GENIE[this.position].y * this.sprite.height;
     //   this.spriteContainer.style.backgroundPosition = `-${x}px -${y}px`;
     //   this.position = (this.position + 1) % this.GENIE.length;
-
     //   if ((this.position = GENIE_POS.RAISE_BROWS.valueOf())) {
     //     this.animationInterval = clearInterval(this.animationInterval);
     //     --this.position;
