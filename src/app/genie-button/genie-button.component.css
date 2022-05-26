@@ -18,3 +18,7 @@
 .no-padding {
   padding: 0;
 }
+
+mat-card {
+  background-color: #ff4081;
+}
